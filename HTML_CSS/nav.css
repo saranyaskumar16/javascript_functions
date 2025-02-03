@@ -1,0 +1,35 @@
+
+body{
+    background-color: rgb(197, 193, 193);
+    margin: 0px;
+
+}
+.nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItems{
+    display: flex;
+    gap: 50px;
+    margin-right: 15px;
+}
+.centre{
+    background-color: white;
+    height: 50vh;
+   /* width: 550px; */
+   border: 50px;
+   padding:50px;
+   margin:20px;
+   
+}
+/* .btn{
+    /* margin-left: 55vh;
+    margin-top: 2vh;
+    padding: px;
+    border-radius: 2%; */
+    background-color: white;
+    align-items: center;
+    bott
+} */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: stretch;
+            background-color: pink;
+        }
+        .container>div{
+            background-color: greenyellow;
+            color: blue;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+  <h1>css order property</h1>
+  <div class="container">
+    <div style="order: 4;">1</div>
+    <div style="order: 2;">2</div>
+    <div style="order: 3;">3</div>
+    <div style="order: 1;">4</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .di {
+            background-color: aqua;
+            width: 90%;
+            height: 400px;
+        }
+
+        .txt {
+            font-size: 90px;
+        }
+
+        @media (max-width: 400px) {
+            .di {
+                background-color: rgb(3, 199, 3);
+                width: 60%;
+            }
+
+            .txt {
+                font-size: 40px;
+            }
+        }
+        @media (min-width: 400px) {
+            .di {
+                background-color: hsl(318, 87%, 32%);
+                width: 90%;
+            }
+
+            .txt {
+                font-size: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="di">
+        <h1 class="txt">hello</h1>
+    </div>
+</body>
+
+</html>
