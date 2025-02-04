@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <button> click me</button>
+    <button> click me</button>
+    <button> click me</button>
+   
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).hide();
+            })
+        })
+    </script>
+<div style="display: flex;">
+<p id="p1">Enter this paragraph.</p>
+</div>
+    <script>
+        $(document).ready(function(){
+          $("#p1").mouseenter(function(){
+            alert("You entered p1!");
+          });
+        });
+        </script>
+
+<div style="display: flex;">
+<p id="p2">This is a paragraph.</p>
+</div>
+    <script>
+        $(document).ready(function(){
+          $("#p2").mouseleave(function(){
+            alert("Bye! You now leave p2!");
+          });
+        }); 
+       </script>
+
+<div style="display: flex;">
+<h4>Click or move the mouse pointer over this paragraph.</h4>
+</div>
+
+<script>
+    $(document).ready(function(){
+      $("h4").on({
+        mouseenter: function(){
+          $(this).css("background-color", "red");
+        },  
+        mouseleave: function(){
+          $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+          $(this).css("background-color", "pink");
+        }  
+      });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            console.log("jquerry syntax");
+        })
+       
+    </script>
+    
+</body>
+</html>

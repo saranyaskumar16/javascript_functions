@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .important {
+          font-weight: bold;
+          font-size: xx-large;
+        }
+        
+        .blue {
+          color: blue;
+        }
+        </style>
+
+    
+</head>
+<body>
+   
+<h1>JQUERRY</h1>
+<h2>ADD AND REMOVE CLASSES</h2>
+
+<p>The following example shows how to add class attributes to different elements. Of course you can select multiple elements, when adding classes.</p>
+
+
+<div>This is some important text!</div><br>
+
+<button>Add classes to elements</button> 
+<p>The following example shows how to remove a specific class attribute from different elements:</p>
+<button id="btn">hide classes to elements</button>
+<button id="bt">toggle class</button>
+
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("h1, h2, p").addClass("blue");
+        $("div").addClass("important");
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#btn").click(function(){
+            $("h1, h2, p").removeClass("blue");
+            $("div").removeClass("important");
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#bt").click(function(){
+                $("h1, h2, p").toggleClass("blue");
+                $("div").toggleClass("important");
+              });
+            });
+            </script>
+</body>
+</html>
